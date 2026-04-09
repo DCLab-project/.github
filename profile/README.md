@@ -1,6 +1,13 @@
 # 🍻 술안주 추천 AI 냉장고
 
 주류와 냉장고 내 식재료를 함께 인식하여, 현재 보유 재료에 맞는 안주 후보와 레시피를 추천하는 스마트 냉장고 프로젝트입니다.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
+  <img src="https://img.shields.io/badge/Google_Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white">
+  <img src="https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=for-the-badge&logo=nvidia&logoColor=white">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
+</p>
 
 ---
 
@@ -238,16 +245,17 @@
 
 | 영역 | 기술 (Stack) | 상세 |
 |:---:|:---|:---|
-| **Edge Device** | ![Jetson Orin Nano](https://img.shields.io/badge/Jetson%20Orin%20Nano-76B900?style=flat-square&logo=nvidia&logoColor=white) | 임베디드 환경에서 실시간 식재료/주류 인식 및 추천 수행 |
-| **Vision Model** | `CNN` `MobileNet` | 식재료 및 주류 카테고리 인식 모델 |
-| **Training** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) | 식재료 인식 모델 학습 |
-| **Optimization** | `ONNX` `TensorRT` | Jetson 배포를 위한 모델 변환 및 추론 최적화 |
-| **Generative AI** | ![Gemini API](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat-square&logo=google&logoColor=white) | 추천 이유 및 설명 보완 생성 |
-| **Recommendation** | `RAG` `Recipe DB` `Pairing Rule DB` `Recommendation Cache` | DB 우선 조회, 후보 필터링/점수화, 추천 보완 생성 |
-| **Database** | `Inventory DB` `Recipe DB` `Pairing Rule DB` `History / Cache` | 재고 관리, 레시피/페어링 지식, 추천 이력 및 캐시 저장 |
-| **Input / Sensors** | `USB Camera` `Door Open Sensor` `Motion Sensor` | 사용자 행동 감지 및 식재료/주류 입력 수집 |
-| **Output / UI** | `Display` `Correction UI` `Inventory View` `Top-3 Recommendation UI` | 현재 재고, 추천 후보 3개, 부족 재료, 추천 이유, 보정 기능 제공 |
-| **Data Source** | `Kaggle Datasets` `Real Captured Images` | 공개 데이터셋 + 실제 촬영 데이터 기반 학습 |
+| **Edge Device** | <img src="https://img.shields.io/badge/Jetson%20Orin%20Nano-76B900?style=flat-square&logo=nvidia&logoColor=white"> | 임베디드 환경에서 실시간 식재료/주류 인식 및 추천 수행 |
+| **Vision Model** | <img src="https://img.shields.io/badge/CNN-FF6F00?style=flat-square"> <img src="https://img.shields.io/badge/MobileNet-015C92?style=flat-square"> | 식재료 및 주류 카테고리 인식 모델 |
+| **Training** | <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"> | 식재료 인식 모델 학습 |
+| **Optimization** | <img src="https://img.shields.io/badge/ONNX-005BA1?style=flat-square&logo=onnx&logoColor=white"> <img src="https://img.shields.io/badge/TensorRT-76B900?style=flat-square&logo=nvidia&logoColor=white"> | Jetson 배포를 위한 모델 변환 및 추론 최적화 |
+| **Generative AI** | <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white"> | 추천 이유 및 설명 보완 생성 |
+| **Recommendation** | <img src="https://img.shields.io/badge/RAG-FF9900?style=flat-square"> <img src="https://img.shields.io/badge/Recommendation_Engine-4CAF50?style=flat-square"> | DB 우선 조회, 후보 필터링/점수화, 추천 보완 생성 |
+| **Database** | <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white"> | 재고 관리, 레시피/페어링 지식, 추천 이력 및 캐시 저장 |
+| **Input / Sensors** | <img src="https://img.shields.io/badge/USB_Camera-181717?style=flat-square"> <img src="https://img.shields.io/badge/Hardware_Sensors-00599C?style=flat-square"> | 사용자 행동 감지 및 식재료/주류 입력 수집 |
+| **Output / UI** | <img src="https://img.shields.io/badge/Display_UI-E34F26?style=flat-square"> | 현재 재고, 추천 후보 3개, 부족 재료, 추천 이유, 보정 기능 제공 |
+| **Data Source** | <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white"> <img src="https://img.shields.io/badge/Custom_Dataset-85EA2D?style=flat-square"> | 공개 데이터셋 + 실제 촬영 데이터 기반 학습 |
+
 
 ---
 
